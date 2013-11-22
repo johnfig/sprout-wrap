@@ -1,0 +1,11 @@
+maintainer        'Byliner'
+maintainer_email  'john.figueiredo@byliner.com'
+license           'MIT'
+description       'contains custom recipies to configure a Byliner develoment machine on OSX'
+long_description  'contains custom recipies to configure a Byliner develoment machine on OSX'
+version           '0.1.0'
+supports          'mac_os_x'
+
+#depends           'pivotal_workstation'
+#depends           'sprout-osx-settings'
+#depends           'sprout-osx-apps'

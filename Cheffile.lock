@@ -4,6 +4,15 @@ SITE
     dmg (2.0.8)
 
 GIT
+  remote: git://github.com/codeword/sprout-terminal.git
+  path: .
+  ref: master
+  sha: 2767f86028376cc4cadd93b56bdc25b2c37fba8b
+  specs:
+    sprout-terminal (0.2.0)
+      osx (>= 0.0.0)
+
+GIT
   remote: git://github.com/pivotal-sprout/sprout.git
   path: osx
   ref: mavericks
@@ -84,15 +93,12 @@ GIT
       sprout-osx-base (>= 0.0.0)
 
 PATH
-  remote: site-cookbooks/meta
+  remote: site-cookbooks/byliner
   specs:
-    meta (0.1.0)
-      pivotal_workstation (>= 0.0.0)
-      sprout-osx-apps (>= 0.0.0)
-      sprout-osx-settings (>= 0.0.0)
+    byliner (0.1.0)
 
 DEPENDENCIES
-  meta (>= 0)
+  byliner (>= 0)
   osx (>= 0)
   pivotal_workstation (>= 0)
   sprout-osx-apps (>= 0)
@@ -101,4 +107,5 @@ DEPENDENCIES
   sprout-osx-rubymine (>= 0)
   sprout-osx-settings (>= 0)
   sprout-pivotal (>= 0)
+  sprout-terminal (>= 0)
 

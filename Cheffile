@@ -1,7 +1,7 @@
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'meta',
-  :path => 'site-cookbooks/meta'
+cookbook 'byliner',
+  :path => 'site-cookbooks/byliner'
 
 cookbook 'sprout-osx-git',
   :git => 'git://github.com/pivotal-sprout/sprout.git',

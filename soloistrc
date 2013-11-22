@@ -9,11 +9,17 @@ recipes:
 - pivotal_workstation::sshd_on
 - pivotal_workstation::inputrc
 - sprout-osx-settings::defaults_fast_key_repeat_rate
-#- sprout-keyboard
 - pivotal_workstation::locate_on
 - sprout-osx-settings::global_environment_variables
+- pivotal_workstation::keyboard_preferences
+- sprout-osx-settings::function_keys
+- pivotal_workstation::screen_sharing_on
+- pivotal_workstation::set_screensaver_preferences
+- pivotal_workstation::tcp_keepalive
+- pivotal_workstation::timemachine_preferences
 
 # development (general)
+- sprout-terminal
 - sprout-osx-base::workspace_directory
 - pivotal_workstation::unix_essentials
 - sprout-osx-git::git_projects
@@ -21,7 +27,7 @@ recipes:
 - sprout-osx-git::git_scripts
 
 # development (rails)
-- pivotal_workstation::rbenv
+- sprout-osx-rbenv
 - pivotal_workstation::gem_setup
 - pivotal_workstation::postgres
 - sprout-osx-apps::imagemagick
@@ -42,12 +48,19 @@ recipes:
 
 # apps (editors)
 - sprout-osx-apps::textmate2
-
 - sprout-osx-apps::rubymine
 - sprout-osx-rubymine::preferences
 
-#- sprout-checkman
-- sprout-terminal
+- byliner::checkman
+
+#TODOs
+#evaluate
+#- pivotal_workstation::rename_machine
+#- pivotal_workstation::snmpd
+
+#create
+#- sprout-keyboard #to replace sprout-osx-settings::defaults_fast_key_repeat_rate & pivotal_workstation::keyboard_preferences
+#- byliner::ssh-keys  #maybe for shared key between dev workstations
 
 node_attributes:
   workspace_directory: workspace
@@ -70,3 +83,16 @@ node_attributes:
     -
       - ios-byliner
       - https://github.com/byliner/byliner-ios.git
+  sprout:
+    checkman:
+      files:
+        byliner:
+          -
+            name: master
+            configuration: 'tddium.check cb5cdba6b8f4ec3a037000b51e9a599aa5bf2c8c "byliner (master)"'
+          -
+            name: develop
+            configuration: 'tddium.check cb5cdba6b8f4ec3a037000b51e9a599aa5bf2c8c "byliner (master)"'
+          -
+            name: airbrake
+            configuration: "airbrake.check byliner 19170ca9e424342e2d6d8bb3b5a7b7f63694222d 79748"
