@@ -9,6 +9,7 @@ recipes:
 - pivotal_workstation::sshd_on
 - pivotal_workstation::inputrc
 - sprout-osx-settings::defaults_fast_key_repeat_rate
+#- sprout-keyboard
 - pivotal_workstation::locate_on
 - sprout-osx-settings::global_environment_variables
 
@@ -20,13 +21,11 @@ recipes:
 - sprout-osx-git::git_scripts
 
 # development (rails)
-#(not working in mavericks)- pivotal_workstation::rvm
+- pivotal_workstation::rbenv
 - pivotal_workstation::gem_setup
-- pivotal_workstation::mysql
-#(not working in mavericks)- pivotal_workstation::postgres
+- pivotal_workstation::postgres
 - sprout-osx-apps::imagemagick
-- sprout-osx-apps::node_js
-#(not working in mavericks)- pivotal_workstation::qt
+- sprout-osx-apps::qt
 
 # apps
 - pivotal_workstation::screen_sharing_app
@@ -35,41 +34,39 @@ recipes:
 - sprout-osx-apps::firefox
 - sprout-osx-apps::dropbox
 - sprout-osx-apps::chrome
-- pivotal_workstation::mouse_locator
 - sprout-osx-apps::menumeters
-- pivotal_workstation::bettertouchtool
-- sprout-osx-apps::ccmenu
-- pivotal_workstation::github_for_mac
-- sprout-osx-apps::gitx
+#- sprout-osx-apps::gitx
 - sprout-osx-apps::iterm2
-- sprout-osx-apps::keycastr
 - sprout-osx-apps::virtualbox
 - sprout-osx-apps::vagrant
 
 # apps (editors)
-- sprout-osx-apps::textmate
-- sprout-osx-apps::textmate_bundles
-- sprout-osx-apps::textmate_preferences
-
-- pivotal_workstation::vim
-#(not working in mavericks)- pivotal_workstation::vim_config
-- sprout-osx-apps::ctags_exuberant
+- sprout-osx-apps::textmate2
 
 - sprout-osx-apps::rubymine
 - sprout-osx-rubymine::preferences
 
+#- sprout-checkman
+- sprout-terminal
+
 node_attributes:
-  git_pairs_domain: pivotallabs.com
+  workspace_directory: workspace
+  git_pairs_domain: byliner.com
   git_pairs_authors:
-    - initials: ah
-      name: Abhijit Hiremagalur
-      shortname: abhi
-    - initials: bc
-      name: Brian Cunnie
-      shortname: cunnie
-    - initials: jrhb
-      name: Jonathan Barnes
+    - initials: jf
+      name: John Figueiredo
+      shortname: john.figueiredo
+    - initials: jr
+      name: James Richard
+    - initials: go
+      name: Goodwin Ogbuehi
   git_projects:
     -
       - sprout-wrap
-      - https://github.com/pivotal-sprout/sprout-wrap.git
+      - https://github.com/byliner/sprout-wrap.git
+    -
+      - byliner
+      - https://github.com/byliner/byliner.git
+    -
+      - ios-byliner
+      - https://github.com/byliner/byliner-ios.git

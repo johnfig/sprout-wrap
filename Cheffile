@@ -42,3 +42,8 @@ cookbook 'sprout-osx-rubymine',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
   :ref => 'mavericks',
   :path => 'sprout-osx-rubymine'
+
+cookbook 'sprout-terminal',
+  :git => 'git://github.com/codeword/sprout-terminal.git',
+  :ref => 'master',
+  :path => '.'
