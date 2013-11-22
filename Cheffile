@@ -5,42 +5,42 @@ cookbook 'byliner',
 
 cookbook 'sprout-osx-git',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
-  :ref => 'mavericks',
+  :ref => 'master',
   :path => 'sprout-osx-git'
 
 cookbook 'sprout-osx-base',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
-  :ref => 'mavericks',
+  :ref => 'master',
   :path => 'sprout-osx-base'
 
 cookbook 'pivotal_workstation',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
-  :ref => 'mavericks',
+  :ref => 'master',
   :path => 'pivotal_workstation'
 
 cookbook 'sprout-osx-apps',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
-  :ref => 'mavericks',
+  :ref => 'master',
   :path => 'sprout-osx-apps'
 
 cookbook 'sprout-osx-settings',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
-  :ref => 'mavericks',
+  :ref => 'master',
   :path => 'sprout-osx-settings'
 
 cookbook 'sprout-pivotal',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
-  :ref => 'mavericks',
+  :ref => 'master',
   :path => 'sprout-pivotal'
 
 cookbook 'osx',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
-  :ref => 'mavericks',
+  :ref => 'master',
   :path => 'osx'
 
 cookbook 'sprout-osx-rubymine',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
-  :ref => 'mavericks',
+  :ref => 'master',
   :path => 'sprout-osx-rubymine'
 
 cookbook 'sprout-terminal',
