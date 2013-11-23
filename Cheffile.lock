@@ -68,6 +68,16 @@ GIT
 
 GIT
   remote: git://github.com/pivotal-sprout/sprout.git
+  path: sprout-osx-rbenv
+  ref: master
+  sha: f0daa7ed7a155c93d95f7f905f1b310bfffadc1a
+  specs:
+    sprout-osx-rbenv (0.1.0)
+      homebrew (>= 0.0.0)
+      sprout-osx-base (>= 0.0.0)
+
+GIT
+  remote: git://github.com/pivotal-sprout/sprout.git
   path: sprout-osx-rubymine
   ref: master
   sha: f0daa7ed7a155c93d95f7f905f1b310bfffadc1a
@@ -111,6 +121,7 @@ DEPENDENCIES
   sprout-osx-apps (>= 0)
   sprout-osx-base (>= 0)
   sprout-osx-git (>= 0)
+  sprout-osx-rbenv (>= 0)
   sprout-osx-rubymine (>= 0)
   sprout-osx-settings (>= 0)
   sprout-pivotal (>= 0)

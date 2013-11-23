@@ -3,6 +3,11 @@ site 'http://community.opscode.com/api/v1'
 cookbook 'byliner',
   :path => 'site-cookbooks/byliner'
 
+cookbook 'sprout-osx-rbenv',
+  :git => 'git://github.com/pivotal-sprout/sprout.git',
+  :ref => 'master',
+  :path => 'sprout-osx-rbenv'
+
 cookbook 'sprout-osx-git',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
   :ref => 'master',

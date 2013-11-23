@@ -51,7 +51,7 @@ recipes:
 - sprout-osx-apps::rubymine
 - sprout-osx-rubymine::preferences
 
-- byliner::checkman
+#- byliner::checkman
 
 #TODOs
 #evaluate
