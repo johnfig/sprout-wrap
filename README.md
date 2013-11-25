@@ -36,6 +36,10 @@ If you're running under rvm or rbenv, you shouldn't preface the following comman
 
 ### 5. Run soloist
 
+### 6. Nuances to be aware of
+    Delete Postgres Databases #causes errors during pg install when trying git to re-create the core db.  We deleted the db and re-ran to get it to work
+        a.  $ sudo rm –rf /user/local/var/postgres
+
 [You may want to modify your Energy Saver preferences (**System Preferences &rarr; Energy Saver &rarr; Computer Sleep &rarr; 3hrs**) because soloist usually takes 2-3 hours to complete.]
 
     bundle exec soloist
@@ -65,10 +69,6 @@ If you're running under rvm or rbenv, you shouldn't preface the following comman
     bundle exec soloist
 
 ### 6. Nuances to be aware of
-  
-    1.  Need to have both Mavericks AND Xcode installed before running sprout-wrap.
-    2.  Delete Postgres Databases #causes errors during pg install when trying git to re-create the core db.  We deleted the db and re-ran to get it to work
+    Delete Postgres Databases #causes errors during pg install when trying git to re-create the core db.  We deleted the db and re-ran to get it to work
         a.  $ sudo rm –rf /user/local/var/postgres
-    3.  Qt failed needing xcode command line tools installed
-        a.  $ xcode-select –install
 
