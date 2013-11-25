@@ -36,13 +36,13 @@ If you're running under rvm or rbenv, you shouldn't preface the following comman
 
 ### 5. Run soloist
 
-### 6. Nuances to be aware of
-    Delete Postgres Databases #causes errors during pg install when trying git to re-create the core db.  We deleted the db and re-ran to get it to work
-        a.  $ sudo rm –rf /user/local/var/postgres
-
 [You may want to modify your Energy Saver preferences (**System Preferences &rarr; Energy Saver &rarr; Computer Sleep &rarr; 3hrs**) because soloist usually takes 2-3 hours to complete.]
 
     bundle exec soloist
+
+### 6. Nuances to be aware of
+    Delete Postgres Databases #causes errors during pg install when trying git to re-create the core db.  We deleted the db and re-ran to get it to work
+        a.  $ sudo rm –rf /user/local/var/postgres
 
 ## Installation under Mountain Lion (OS X 10.8)
 
