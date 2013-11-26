@@ -21,26 +21,30 @@ Finally, if you've never used Chef before - we highly recommend you buy &amp; wa
 
 Don't forget to start up Xcode once it's installed so that you can agree to the terms&mdash;many commands won't work until the terms have been agreed to.
 
-### 2. Clone this project
+### 3. Install Command Line Tools
+  
+  XCode > Preferences > Downloads
+
+### 4. Clone this project
 
     git clone https://github.com/pivotal-sprout/sprout-wrap.git
     cd sprout-wrap
     git checkout mavericks
 
-### 4. Install soloist & and other required gems
+### 5. Install soloist & and other required gems
 
 If you're running under rvm or rbenv, you shouldn't preface the following commands with `sudo`.
 
     sudo gem install bundler
     sudo bundle
 
-### 5. Run soloist
+### 6. Run soloist
 
 [You may want to modify your Energy Saver preferences (**System Preferences &rarr; Energy Saver &rarr; Computer Sleep &rarr; 3hrs**) because soloist usually takes 2-3 hours to complete.]
 
     bundle exec soloist
 
-### 6. Nuances to be aware of
+### 7. Nuances to be aware of
     Delete Postgres Databases #causes errors during pg install when trying git to re-create the core db.  We deleted the db and re-ran to get it to work
         a.  $ sudo rm –rf /user/local/var/postgres
 

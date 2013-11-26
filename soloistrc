@@ -29,9 +29,11 @@ recipes:
 # development (rails)
 - sprout-osx-rbenv
 - pivotal_workstation::gem_setup
+- pivotal_workstation::mysql
 - pivotal_workstation::postgres
 - sprout-osx-apps::imagemagick
 - sprout-osx-apps::qt
+- sprout-osx-apps::node_js
 
 # apps
 - pivotal_workstation::screen_sharing_app
@@ -65,39 +67,7 @@ recipes:
 
 node_attributes:
   workspace_directory: workspace
-  git_pairs_domain: byliner.com
-  git_pairs_authors:
-    - initials: jf
-      name: John Figueiredo
-      shortname: john.figueiredo
-    - initials: jr
-      name: James Richard
-    - initials: go
-      name: Goodwin Ogbuehi
   git_projects:
     -
       - sprout-wrap
-      - https://github.com/byliner/sprout-wrap.git
-    -
-      - byliner
-      - https://github.com/byliner/byliner.git
-    -
-      - ios-byliner
-      - https://github.com/byliner/byliner-ios.git
-  sprout:
-    rbenv:
-      rubies: 
-        '1.9.3-p125': {}
-      default_ruby: '1.9.3-p125'
-    checkman:
-      files:
-        byliner:
-          -
-            name: master
-            configuration: 'tddium.check cb5cdba6b8f4ec3a037000b51e9a599aa5bf2c8c "byliner (master)"'
-          -
-            name: develop
-            configuration: 'tddium.check cb5cdba6b8f4ec3a037000b51e9a599aa5bf2c8c "byliner (master)"'
-          -
-            name: airbrake
-            configuration: "airbrake.check byliner 19170ca9e424342e2d6d8bb3b5a7b7f63694222d 79748"
+      - https://github.com/johnfig/sprout-wrap.git
